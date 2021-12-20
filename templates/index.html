@@ -1,0 +1,24 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card yellow lighten-4">
+  <div class="card-content">
+    <span class="card-title">Route Finder</span>
+    <p>
+      Hello and welcome to the Route Finder web app! Choose an option below
+      or in the navigation bar above to either add books to your list, or 
+      view the currently selected items and their route.
+    </p>
+  </div>
+  <div class="card-action">
+    <a href="/route">View Books</a>
+    <a href="/add">Add Books</a>
+  </div>
+</div>
+
+{% endblock %}
