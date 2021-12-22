@@ -5,8 +5,8 @@
 """Application"""
 
 from flask import Flask, render_template, request
-from config import app, db
-from classify import getInfo
+from app.config import app, db
+from app.classify import getInfo
 
 
 @app.route("/")
