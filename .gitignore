@@ -7,6 +7,7 @@ __pycache__/
 *.so
 
 plane.*
+.vscode/
 
 # Distribution / packaging
 .Python
