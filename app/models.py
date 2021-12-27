@@ -4,7 +4,7 @@
 
 """Data Models"""
 
-from config import db, mm
+from .config import db, mm
 
 
 class Book(db.Model):
@@ -21,12 +21,12 @@ class BookSchema(mm.SQLAlchemyAutoSchema):
         sqla_session = db.session
 
 
-class User(db.Model):
+class Shelf(db.Model):
     __tablename__ = "SHELVES"
     username = db.Column(db.String)
     userid = db.Column(db.Integer, primary_key=True)
 
-class UserSchema(mm.SQLAlchemyAutoSchema):
+class ShelfSchema(mm.SQLAlchemyAutoSchema):
     class Meta:
-        model = User
+        model = Shelf
         sqla_session = db.session

@@ -11,7 +11,7 @@ from flask_marshmallow import Marshmallow
 
 
 # Initialize Flask app
-app = Flask(__name__)
+app = Flask(__name__, template_folder="../templates/")
 
 this_dir = os.path.abspath(os.path.dirname(__file__))
 

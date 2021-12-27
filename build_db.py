@@ -6,8 +6,8 @@
 
 import csv
 import os
-from config import db
-from models import Book, Shelf
+from app import Book, Shelf
+from app.config import db
 
 
 def build_db(dbname):
